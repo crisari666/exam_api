@@ -3,7 +3,8 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { getDatabaseConfig } from './config/database.config';
+import { getDatabaseConfig } from './database/database.config';
+import { CustomersModule } from './modules/customers/customers.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { getDatabaseConfig } from './config/database.config';
       imports: [ConfigModule],
       useFactory: () => getDatabaseConfig(),
     }),
+    CustomersModule,
   ],
   controllers: [AppController],
   providers: [AppService],

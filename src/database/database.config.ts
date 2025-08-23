@@ -21,12 +21,15 @@ export const getDatabaseConfig = (): MongooseModuleOptions => {
       connection.on('connected', () => {
         console.log('MongoDB is connected');
       });
+      
       connection.on('error', (error) => {
         console.error('MongoDB connection error:', error);
       });
+      
       connection.on('disconnected', () => {
         console.log('MongoDB is disconnected');
       });
+      
       return connection;
     },
   };
