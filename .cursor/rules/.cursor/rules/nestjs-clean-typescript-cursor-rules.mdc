@@ -17,7 +17,7 @@ Generate code, corrections, and refactorings that comply with the basic principl
 
 ### Nomenclature
 
-- Use PascalCase for classes.
+- Use PascalCase for classes. 
 - Use camelCase for variables, functions, and methods.
 - Use kebab-case for file and directory names.
 - Use UPPERCASE for environment variables.
@@ -120,3 +120,42 @@ Generate code, corrections, and refactorings that comply with the basic principl
 - Write end to end tests for each api module.
 - Add a admin/test method to each controller as a smoke test.
  
+### Architecture
+
+- Use this app architecrure template
+
+src/
+├── common/                 # Shared utilities and constants
+│   ├── decorators/
+│   ├── guards/
+│   ├── interceptors/
+│   └── utils/
+├── config/                 # Environment and app configuration
+├── database/              # Database connections and migrations
+├── modules/               # Business domain modules
+│   ├── auth/
+│   │   ├── auth.controller.ts
+│   │   ├── auth.service.ts
+│   │   ├── auth.module.ts
+│   │   ├── dto/
+│   │   ├── guards/
+│   │   └── strategies/
+│   ├── users/
+│   │   ├── users.controller.ts
+│   │   ├── users.service.ts
+│   │   ├── users.module.ts
+│   │   ├── dto/
+│   │   ├── entities/
+│   │   └── repositories/
+│   └── orders/
+│       ├── orders.controller.ts
+│       ├── orders.service.ts
+│       ├── orders.module.ts
+│       ├── dto/
+│       ├── entities/
+│       └── events/
+├── shared/                # Cross-cutting concerns
+│   ├── events/
+│   ├── cache/
+│   └── logging/
+└── main.ts
