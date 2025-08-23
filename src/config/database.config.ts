@@ -26,7 +26,7 @@ export const getDatabaseConfig = (): MongooseModuleOptions => {
       });
       connection.on('disconnected', () => {
         console.log('MongoDB is disconnected');
-      });A
+      });
       return connection;
     },
   };
