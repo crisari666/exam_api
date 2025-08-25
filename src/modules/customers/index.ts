@@ -3,4 +3,7 @@ export * from './customers.service';
 export * from './customers.controller';
 export * from './dto/create-customer.dto';
 export * from './dto/update-customer.dto';
+export * from './dto/start-exam.dto';
+export * from './dto/finish-exam.dto';
+export * from './dto/restart-exam.dto';
 export * from './entities/customer.entity';
