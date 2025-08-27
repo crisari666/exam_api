@@ -16,14 +16,14 @@ export type Question = {
   matchingPairs?: { word: string; meaning: string }[];
 };
 export const mockQuestions: Question[] = [
-  // Fill in the gaps questions (4 points)
+  // Fill in the gaps questions (1 point)
   {
     id: 1,
     type: 'fill-gap',
     question: 'Can you drive a truck? No, ____',
     options: ['I can', 'We can', "I can't", "You can't"],
     correctAnswer: "I can't",
-    points: 4,
+    points: 1,
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const mockQuestions: Question[] = [
     question: '______ Alice come here often?',
     options: ['Where', 'Is', 'Does', 'Are'],
     correctAnswer: 'Does',
-    points: 4,
+    points: 1,
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const mockQuestions: Question[] = [
       'What languages does your neighbor speak? She ____ French and English',
     options: ['Speaking', 'Is speak', 'Speak', 'Speaks'],
     correctAnswer: 'Speaks',
-    points: 4,
+    points: 1,
   },
   {
     id: 4,
@@ -48,16 +48,16 @@ export const mockQuestions: Question[] = [
     question: 'What did you do yesterday? We ____ a book',
     options: ['read', 'did read', 'was read', 'reading'],
     correctAnswer: 'read',
-    points: 4,
+    points: 1,
   },
-  // Multiple choice questions (8 points)
+  // Multiple choice questions (1 point)
   {
     id: 5,
     type: 'multiple-choice',
     question: 'What color is it?',
     options: ['Blue', 'Purple', 'Orange', 'Red'],
     correctAnswer: 'Blue',
-    points: 8,
+    points: 1,
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ export const mockQuestions: Question[] = [
     question: 'What number is it?',
     options: ['One', 'Eleven', 'Three', 'Ten'],
     correctAnswer: 'Eleven',
-    points: 8,
+    points: 1,
   },
   {
     id: 7,
@@ -73,7 +73,7 @@ export const mockQuestions: Question[] = [
     question: 'Hello my name is Emma I am from _____',
     options: ["I'm Canadian", "I'm Peruvian", "I'm Brazilian", "I'm Honduran"],
     correctAnswer: "I'm Canadian",
-    points: 8,
+    points: 1,
   },
   {
     id: 8,
@@ -86,7 +86,7 @@ export const mockQuestions: Question[] = [
       'I forgot to turn the lights off.',
     ],
     correctAnswer: 'Both are nice.',
-    points: 8,
+    points: 1,
   },
   {
     id: 9,
@@ -94,7 +94,7 @@ export const mockQuestions: Question[] = [
     question: 'I am afraid my sister is sick.',
     options: ["Oh, I'm sorry.", 'Too late.', 'Can I go now?'],
     correctAnswer: "Oh, I'm sorry.",
-    points: 8,
+    points: 1,
   },
   {
     id: 10,
@@ -102,7 +102,7 @@ export const mockQuestions: Question[] = [
     question: "Let's go to the park next weekend.",
     options: ['As soon as possible.', 'Hope it is.', 'Great idea.'],
     correctAnswer: 'Great idea.',
-    points: 8,
+    points: 1,
   },
   {
     id: 11,
@@ -110,16 +110,16 @@ export const mockQuestions: Question[] = [
     question: 'Can I talk to you for a minute?',
     options: ['Be careful.', 'Of course.', 'Just one.'],
     correctAnswer: 'Of course.',
-    points: 8,
+    points: 1,
   },
-  // Reading comprehension questions (5 points)
+  // Reading comprehension questions (1 point)
   {
     id: 12,
     type: 'reading',
     question: 'What happens first?',
     options: ['Wake up', 'Get dressed', 'Eat lunch', 'Walk to school'],
     correctAnswer: 'Wake up',
-    points: 5,
+    points: 1,
     readingPassage:
       'My day\nFirst, I wake up. Then, I get dressed. I walk to school. I do not ride a bike. I do not ride the bus. I like to go to school. It rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.\nI play outside. I like to play. I read a book. I like to read books. I walk home. I do not like walking home. My mother cooks soup for dinner. The soup is hot. Then, I go to bed. I do not like to go to bed.',
   },
@@ -129,7 +129,7 @@ export const mockQuestions: Question[] = [
     question: 'What do I like?',
     options: ['Rain', 'Going to bed', 'Walking home', 'Books'],
     correctAnswer: 'Books',
-    points: 5,
+    points: 1,
     readingPassage:
       'My day\nFirst, I wake up. Then, I get dressed. I walk to school. I do not ride a bike. I do not ride the bus. I like to go to school. It rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.\nI play outside. I like to play. I read a book. I like to read books. I walk home. I do not like walking home. My mother cooks soup for dinner. The soup is hot. Then, I go to bed. I do not like to go to bed.',
   },
@@ -139,7 +139,7 @@ export const mockQuestions: Question[] = [
     question: 'How do I go to school?',
     options: ['I ride a bike.', 'I ride the bus.', 'I walk.', 'I drive a car.'],
     correctAnswer: 'I walk.',
-    points: 5,
+    points: 1,
     readingPassage:
       'My day\nFirst, I wake up. Then, I get dressed. I walk to school. I do not ride a bike. I do not ride the bus. I like to go to school. It rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.\nI play outside. I like to play. I read a book. I like to read books. I walk home. I do not like walking home. My mother cooks soup for dinner. The soup is hot. Then, I go to bed. I do not like to go to bed.',
   },
@@ -149,7 +149,7 @@ export const mockQuestions: Question[] = [
     question: 'What do I eat for dinner?',
     options: ['Soup', 'Sandwich', 'Apple', 'Pie'],
     correctAnswer: 'Soup',
-    points: 5,
+    points: 1,
     readingPassage:
       'My day\nFirst, I wake up. Then, I get dressed. I walk to school. I do not ride a bike. I do not ride the bus. I like to go to school. It rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.\nI play outside. I like to play. I read a book. I like to read books. I walk home. I do not like walking home. My mother cooks soup for dinner. The soup is hot. Then, I go to bed. I do not like to go to bed.',
   },
@@ -159,7 +159,7 @@ export const mockQuestions: Question[] = [
     question: 'What do I not like?',
     options: ['Playing', 'Soup', 'Going to school', 'Going to bed'],
     correctAnswer: 'Going to bed',
-    points: 5,
+    points: 1,
     readingPassage:
       'My day\nFirst, I wake up. Then, I get dressed. I walk to school. I do not ride a bike. I do not ride the bus. I like to go to school. It rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.\nI play outside. I like to play. I read a book. I like to read books. I walk home. I do not like walking home. My mother cooks soup for dinner. The soup is hot. Then, I go to bed. I do not like to go to bed.',
   },
